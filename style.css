@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffeddb;
+  margin: 0;
+}
+
+#header-img {
+  height: 100px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: #edcdbb;
+  width: 100%;
+  height: 100px;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 350px;
+  width: 50%;
+  list-style-type: none;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#nav-bar a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70vw;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+}
+
+#form input[type="email"] {
+  padding: 10px;
+  width: 270px;
+}
+
+#form input[type="submit"] {
+  background-color: #bf9270;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+#features {
+  margin: 40px 0;
+}
+
+#features .fa-solid {
+  font-size: 3rem;
+  width: 70px;
+  margin: 0;
+}
+
+.features-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#video {
+  max-width: 800px;
+  min-width: 400px;
+  width: 60%;
+}
+
+#purchase {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#purchase .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  height: 280px;
+  text-align: center;
+  flex: 1;
+}
+
+#purchase .card h2 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #e3b7a0;
+}
+
+#purchase h3 {
+  margin-bottom: 0;
+}
+
+#purchase p {
+  width: 90%;
+}
+
+#purchase .card .buy-btn {
+  margin-top: auto;
+  margin-bottom: 10px;
+  background-color: #bf9270;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+footer {
+  padding-left: 50px;
+  color: white;
+  background-color: #362706;
+}
+
+footer ul {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 10px 0;
+  max-width: 100%;
+}
+
+footer li {
+  cursor: pointer;
+}
+
+@media (max-width: 440px) {
+  main {
+    width: 100%;
+    margin-top: 250px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #header {
+    flex-direction: column;
+    height: 250px;
+  }
+
+  #nav-bar {
+    height: 150px;
+    flex-direction: column;
+  }
+
+  #features .fa-solid {
+    display: none;
+  }
+
+  .features-item {
+    text-align: center;
+  }
+
+  #video {
+    width: 90vw;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1135px) {
+  #purchase {
+    flex-direction: column;
+  }
+}
